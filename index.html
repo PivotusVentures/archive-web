@@ -144,8 +144,12 @@
 			var filesOrFolders = [];
 
 			listBucketResult.find('Contents').each(function(idx, element){
-
 				var $element = $(element);
+
+				// exclude index.html file
+				if ($element.find('Key').text() === "index.html") {
+					return
+				}
 
 				var fileOrFolder = new FileOrFolder(
 					 $element.find('LastModified').text(),
