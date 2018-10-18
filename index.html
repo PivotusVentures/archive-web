@@ -28,7 +28,7 @@
 
   -->
 
-	  <title>Bucket loading...</title>
+	  <title>Archives.</title>
 	  <link href="//netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet"/>
 	  <style>
 	    .hide-while-loading {
@@ -49,7 +49,7 @@
 	<body>
 
 	  <div class="container">
-  	  <h1 id="h1-title">Bucket loading...</h1>
+  	  <h1 id="h1-title">Archives Loading...</h1>
   	  <table class="hide-while-loading table table-striped">
   	    <thead>
   	      <tr>
@@ -132,8 +132,8 @@
 		function onAjaxSuccess(xml) {
 			var listBucketResult = $(xml).find('ListBucketResult');
 
-			// set a reasonable title instead of "Bucket loading"
-			var title = 'Index of bucket "' + listBucketResult.find('Name').text() + '"';
+			// set a reasonable title
+			var title = "Archives"
 			document.title = title;
 			$('#h1-title').text(title);
 

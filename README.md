@@ -1,4 +1,4 @@
-Pretty S3 index.html
+archive-web
 ====================
 
 Author
@@ -11,6 +11,8 @@ GPL v3
 
 Summary
 ---------
+
+Forked from [pretty-s3-index-html][4] and repurposed for the Archiving Platform
 
 A Bootstrap-y, pretty index.html designed to be placed at the root of a public Amazon S3 bucket, which
 you just want to use for displaying a list of files.
@@ -26,3 +28,4 @@ For comparison, the [original index.html created by Amazon][2] looks [like this]
 [1]: https://nolanlawson.s3.amazonaws.com/index.html
 [2]: https://aws.amazon.com/code/1713
 [3]: http://regexp.s3.amazonaws.com/list.html
+[4]: https://github.com/nolanlawson/pretty-s3-index-html
